@@ -34,7 +34,7 @@ const Items = ({ data, gymSearchByName, gymSearch }) => {
                                     </div>
                                     <div className='btnContainer'>
                                         <span>{value.plan_price !== null ? <>₹ {value.plan_price} {value.plan_name}</> : ""}</span>
-                                        <button className='bookNowBtn'>Book Now</button>
+                                       <a target='blank' href='https://wtfup.me/gym_details/WTF-The-Fitness-Point-Gym'> <button className='bookNowBtn'>Book Now</button> </a>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ const Items = ({ data, gymSearchByName, gymSearch }) => {
 
                                         <div className='btnContainer'>
                                             <span>{value.plan_price !== null ? <>₹ {value.plan_price} {value.plan_name}</> : ""}</span>
-                                            <button className='bookNowBtn'>Book Now</button>
+                                            <a target='blank' href='https://wtfup.me/gym_details/WTF-The-Fitness-Point-Gym'> <button className='bookNowBtn'>Book Now</button> </a>
                                         </div>
 
                                     </div>
@@ -90,7 +90,7 @@ const Items = ({ data, gymSearchByName, gymSearch }) => {
 
                                         <div className='btnContainer'>
                                             <span>{value.plan_price !== null ? <>₹ {value.plan_price} {value.plan_name}</> : ""}</span>
-                                            <button className='bookNowBtn'>Book Now</button>
+                                            <a target='blank' href='https://wtfup.me/gym_details/WTF-The-Fitness-Point-Gym'> <button className='bookNowBtn'>Book Now</button> </a>
                                         </div>
 
                                     </div>
