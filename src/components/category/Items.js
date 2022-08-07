@@ -84,7 +84,7 @@ const Items = ({ data, gymSearchByName, gymSearch }) => {
                                         <div className='loctionDetails' >
                                             <h3>{value.gym_name}</h3>
                                             <div>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
-                                            <p>{value.address1} {value.address2}, {value.city},{value.state}</p>
+                                            <p>{value.address1} {value.address2}, {value.city}, {value.state}</p>
                                             <div>{value.duration_text} away | {value.distance_text} </div>
                                         </div>
 

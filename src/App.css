@@ -228,6 +228,7 @@ select:focus-visible {
 .loctionDetails p {
   margin: 0;
   font-weight: 500;
+  word-break: break-all;
 }
 
 .gymBanner,
@@ -378,11 +379,29 @@ select:focus-visible {
     height: 70px;
     margin-left: 0px;
   }
- .contentBox .imgBox,  .contentBox .imgBox img{width: 100%;}
-  .itemContainer .items{    padding: 20px;
-    width: calc(100% - 40px );}
-  .contentBox .imgBox,  .contentBox .imgBox img{height: 200px;min-height: 100px;}
-  .contentBox {flex-direction: column;display: flex;border-radius: 0;}
+
+  .contentBox .imgBox,
+  .contentBox .imgBox img {
+    width: 100%;
+  }
+
+  .itemContainer .items {
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .contentBox .imgBox,
+  .contentBox .imgBox img {
+    height: 200px;
+    min-height: 100px;
+  }
+
+  .contentBox {
+    flex-direction: column;
+    display: flex;
+    border-radius: 0;
+  }
+
   .header .headLinkFlex {
     width: 100%;
     align-items: center;
@@ -391,33 +410,58 @@ select:focus-visible {
     justify-content: center;
 
   }
-  .gymBanner, .gymBanner img {
+
+  .gymBanner,
+  .gymBanner img {
     height: 200px;
-}
-  
+  }
+
   .contentBox .imgBox img {
 
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
-.loctionDetails {min-height: 150px;}
-  
-.itemContainer .inputFilter{width: 100%;position: relative;top: 0;padding: 0;}
-.itemContainer .inputFilter form{margin: 20px;}
-.contentBox .contentDetails {width: 100%;padding: 20px 0 20px  20px ;}
-  .itemContainer{flex-direction: column;display: flex;}
+  .loctionDetails {
+    min-height: 150px;
+    width: 90%;
+  }
+
+  .itemContainer .inputFilter {
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding: 0;
+  }
+
+  .itemContainer .inputFilter form {
+    margin: 20px;
+  }
+
+  .contentBox .contentDetails {
+    width: 100%;
+    padding: 20px 0 20px 20px;
+  }
+
+  .itemContainer {
+    flex-direction: column;
+    display: flex;
+  }
+
   .header .headLinkFlex li {
     margin-right: 10px;
   }
-   .btnContainer {
-  display: flex;
+
+  .btnContainer {
+    display: flex;
     justify-content: left;
     flex-direction: row-reverse;
   }
-  
-  .btnContainer  button{margin-right: 15px;} 
-  
+
+  .btnContainer button {
+    margin-right: 15px;
+  }
+
   .header .headLinkFlex:last-child {
     margin-right: 0;
   }
