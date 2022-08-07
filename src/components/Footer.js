@@ -13,8 +13,8 @@ const Footer = () => {
         <div className='footer'>
 
             {/* first footer box */}
-            <div>
-                <Link to='#'><img src={wtficon} alt='Wtf img' style={{width:'100%' ,height:'50px'}}/></Link>
+            <div className='footerLogo'>
+                <Link to='#'><img src={wtficon} alt='Wtf img' style={{ width: '100%', height: '50px' }} /></Link>
                 <div className='socialmediaIconContainer'>
                     <div className='socialmediaIcons insta'><a href='https://www.instagram.com/wtfupme/' style={{ textDecoration: 'none' }}><InstagramIcon /></a></div>
                     <div className='socialmediaIcons'><a href='https://www.facebook.com/wtfupme/' style={{ textDecoration: 'none' }}><FacebookIcon /></a></div>
@@ -26,11 +26,13 @@ const Footer = () => {
             {/* second footer box */}
             <div>
                 <h3> Quick Links </h3>
-                <Link to='#' className='textLink'><div className='quicklinks'> About</div></Link>
-                <Link to='#' className='textLink'><div className='quicklinks'> FAQs</div></Link>
-                <Link to='#' className='textLink'><div className='quicklinks'> Privacy Policy</div></Link>
-                <Link to='#' className='textLink'><div className='quicklinks'> Terms & Conditions</div></Link>
-                <Link to='#' className='textLink'><div className='quicklinks'> Refund & Cancellation</div></Link>
+                <div className='footerLinks'>
+                    <Link to='#' className='textLink'><div className='quicklinks'> About</div></Link>
+                    <Link to='#' className='textLink'><div className='quicklinks'> FAQs</div></Link>
+                    <Link to='#' className='textLink'><div className='quicklinks'> Privacy Policy</div></Link>
+                    <Link to='#' className='textLink'><div className='quicklinks'> Terms & Conditions</div></Link>
+                    <Link to='#' className='textLink'><div className='quicklinks'> Refund & Cancellation</div></Link>
+                </div>
             </div>
 
 
@@ -38,9 +40,12 @@ const Footer = () => {
 
             <div>
                 <h3> Explore </h3>
-                <Link to='#' className='textLink'><div className='explorelinks'>  Arenas </div></Link>
-                <Link to='#' className='textLink'><div className='explorelinks'>  Studios </div></Link>
-                <Link to='#' className='textLink'><div className='explorelinks'>  Nutrition </div></Link>
+                <div className='footerLinks'>
+
+                    <Link to='#' className='textLink'><div className='explorelinks'>  Arenas </div></Link>
+                    <Link to='#' className='textLink'><div className='explorelinks'>  Studios </div></Link>
+                    <Link to='#' className='textLink'><div className='explorelinks'>  Nutrition </div></Link>
+                </div>
             </div>
 
             {/* fourth footer box */}
@@ -83,7 +88,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </Link>
-                
+
             </div>
 
         </div>

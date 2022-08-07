@@ -6,16 +6,15 @@ const Header = () => {
 
     return (
         <div className='header'>
-            <Link to='#'><img src={wtficon} alt='Wtf img' style={{ width: '60%', height: '50px',marginLeft:'200px' }} /></Link>
+           <div className='logoBox'><Link to='#'><img className='headerLogo' src={wtficon} alt='Wtf img' /></Link></div> 
                 <ul className='headLinkFlex' type="none">
                 <li><NavLink className={({ isActive }) => isActive ? "headLinkText active" : "headLinkText"} to="/fitness" >Fitness</NavLink></li>
                 <li><NavLink style={({ isActive }) => { return { "style": isActive ? 'underline' : '' } }} to="/nutrition" className="headLinkText">Nutrition</NavLink></li>
                 <li><NavLink style={({ isActive }) => { return { "style": isActive ? 'underline' : '' } }} to="/gyms" className="headLinkText">Gyms</NavLink></li>
                 <li><NavLink style={({ isActive }) => { return { "style": isActive ? 'underline' : '' } }} to="/becomepartner" className="headLinkText">Become WTF Partner</NavLink></li>
                 <li><NavLink style={({ isActive }) => { return { "style": isActive ? 'underline' : '' } }} to="/aboutus" className="headLinkText">About Us</NavLink></li>
+                <li><button className='loginbtn'><Link to="#" className="headLinkText">Login</Link></button></li>
             </ul>
-            <button className='loginbtn'><Link to="#" className="headLinkText">Login</Link></button>
-
         </div>
     )
 }
