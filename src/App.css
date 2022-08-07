@@ -362,10 +362,11 @@ select:focus-visible {
     text-align: left;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footerLinks a {
-    width: 33.33%;
+    width: 32.5%;
   }
 
   .logoBox {
