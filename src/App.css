@@ -37,18 +37,35 @@ h5 {
 
 .header .headLinkFlex .headLinkText,
 .header .loginbtn .headLinkText {
-  color: aliceblue;
+  color: white;
   opacity: .7;
   text-decoration: none;
 }
 
 .header .loginbtn {
-  background-color: red;
+  background-color: darkred;
   width: 70px;
   height: 35px;
   margin: 10px 5px;
   font-size: 15px;
   border-radius: 8px;
+  border: 1px solid darkred;
+  cursor: pointer;
+}
+
+.header .loginbtn:hover {
+  background-color: white;
+  color: darkred;
+  transition: all 700ms;
+  border: 1px solid darkred;
+}
+
+.header .loginbtn:hover .headLinkText {
+  color: darkred;
+}
+
+.header .loginbtn .headLinkText {
+  opacity: 1;
 }
 
 .header .loginbtn .headLinkText:hover {
