@@ -8,14 +8,15 @@ const Items = ({ data, gymSearchByName, gymSearch }) => {
         setNewdata(JSON.parse(data).data)
 
     },[])
+
     const name = gymSearchByName.name
     const byCity = gymSearch.city
-    const loc = gymSearch.loc.toLowerCase()
-    const minRange = gymSearch.minRange.toLowerCase()
-    const maxRange = gymSearch.maxRange.toLowerCase()
+    // const loc = gymSearch.loc.toLowerCase()
+    // const minRange = gymSearch.minRange.toLowerCase()
+    // const maxRange = gymSearch.maxRange.toLowerCase()
     return (
         <>
-            {(gymSearchByName==''  || gymSearch=='' ) ?
+            {(gymSearchByName===''  || gymSearch==='' ) ?
 
                 <>
                     {newdata.map((value) => {

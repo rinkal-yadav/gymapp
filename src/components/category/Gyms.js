@@ -2,21 +2,17 @@ import React, { useState } from 'react'
 import { InputBase } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import ClearIcon from '@mui/icons-material/Clear';
 import Items from './Items';
 import gymDetail from '../nearestgym'
 import banner from '../../image/banner2.jpg'
-import clear from '../../image/clear.png'
 
 const Gyms = () => {
     const [gymSearch, setGymSearch] = useState({ loc: "", minRange: "", maxRange: "", city: "" })
     const [gymSearchByName, setGymSearchByName] = useState({ name: "" })
-    // const [input,setInput]=useState({name:''})
     const onHandle = (e) => {
         const name = e.target.name
         const value = e.target.value
         setGymSearchByName({ ...gymSearchByName, [name]: value })
-        // setInput({ ...gymSearchByName, [name]: value })
     }
     const onHandle2 = (e) => {
         const name = e.target.name
