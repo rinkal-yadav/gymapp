@@ -302,3 +302,7 @@ select:focus-visible {
 .searchInput button:hover {
   opacity: .8;
 }
+
+.css-oasusv{
+  width: 90% !important;
+}
