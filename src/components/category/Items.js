@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react'
 const Items = ({ data, gymSearchByName, gymSearch }) => {
     const gymimage = "https://thumbs.dreamstime.com/b/sport-fitness-lifestyle-people-concept-smiling-men-women-stretching-gym-sport-fitness-lifestyle-people-concept-147152548.jpg"
     //  console.log(gymSearchByName.name.toLowerCase())
-    let [newdata,setNewdata]= useState([])
-    useEffect(()=>{
+    let [newdata, setNewdata] = useState([])
+    useEffect(() => {
         setNewdata(JSON.parse(data).data)
 
-    },[])
+    }, [data,newdata,setNewdata])
 
     const name = gymSearchByName.name
     const byCity = gymSearch.city
@@ -16,14 +16,14 @@ const Items = ({ data, gymSearchByName, gymSearch }) => {
     // const maxRange = gymSearch.maxRange.toLowerCase()
     return (
         <>
-            {(gymSearchByName===''  || gymSearch==='' ) ?
+            {(name.length ===0 && byCity.length === 0) ?
 
                 <>
                     {newdata.map((value) => {
                         return (
                             <div key={value.user_id} className='contentBox'>
                                 <div className='imgBox'>
-                                    <img src={value.cover_image === null ? gymimage : value.cover_image} alt='gym image' />
+                                    <img src={value.cover_image === null ? gymimage : value.cover_image} alt={'gym'} />
                                 </div>
                                 <div className='contentDetails'>
                                     <div className='loctionDetails' >
@@ -45,12 +45,12 @@ const Items = ({ data, gymSearchByName, gymSearch }) => {
                 </>
                 : <>
                     <>
-                        {gymSearchByName && <>
+                        {gymSearchByName.name.length >1 ?<>
                             {newdata.filter((value) => value.gym_name.toLowerCase().includes(name.toLowerCase())).map((value) =>
                                 {return(
                                     <div key={value.user_id} className='contentBox'>
                                     <div className='imgBox'>
-                                        <img src={value.cover_image === null ? gymimage : value.cover_image} alt='gym image' />
+                                        <img src={value.cover_image === null ? gymimage : value.cover_image} alt={'gym'} />
                                     </div>
 
                                     <div className='contentDetails'>
@@ -72,14 +72,13 @@ const Items = ({ data, gymSearchByName, gymSearch }) => {
                                 )}
                             )}
                         </> 
-                        }
-                    </>
-                    <>{gymSearch &&
+                      :
+                    
                         <>
                             {newdata.filter((value) => value.city.toLowerCase().includes(byCity.toLowerCase())).map((value) =>
                                 <div key={value.user_id} className='contentBox'>
                                     <div className='imgBox'>
-                                        <img src={value.cover_image === null ? gymimage : value.cover_image} alt='gym image' />
+                                        <img src={value.cover_image === null ? gymimage : value.cover_image} alt={'gym'} />
                                     </div>
                                     <div className='contentDetails'>
                                         <div className='loctionDetails' >

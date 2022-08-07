@@ -29,11 +29,13 @@ h5 {
   margin-left: auto;
 }
 
-.header .headLinkFlex .headLinkText ,.header .loginbtn .headLinkText{
+.header .headLinkFlex .headLinkText,
+.header .loginbtn .headLinkText {
   color: aliceblue;
   opacity: .7;
   text-decoration: none;
 }
+
 .header .loginbtn {
   background-color: red;
   width: 70px;
@@ -44,14 +46,18 @@ h5 {
 }
 
 .header .loginbtn .headLinkText:hover {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 .header .headLinkFlex .headLinkText:hover,
 .active {
   opacity: 1 !important;
 }
-.css-yz9k0d-MuiInputBase-input {color: white !important;}
+
+.css-yz9k0d-MuiInputBase-input {
+  color: white !important;
+}
+
 .active {
   border-bottom: 3px solid rgb(170, 132, 132);
 }
@@ -73,7 +79,7 @@ h5 {
 
 .itemContainer,
 .minAndMaxBox,
-.contentBox  {
+.contentBox {
   display: flex;
 }
 
@@ -89,7 +95,7 @@ h5 {
 
 .itemContainer .items {
   width: calc(100% - 300px);
-  padding:0  40px;
+  padding: 0 40px;
 
 }
 
@@ -155,7 +161,7 @@ select:focus-visible {
 }
 
 .contentBox .contentDetails {
-  box-shadow:-36px 0 55px -30px #221e1e;
+  box-shadow: -36px 0 55px -30px #221e1e;
   width: 50%;
 }
 
@@ -175,7 +181,12 @@ select:focus-visible {
 .loctionDetails {
   min-height: 250px;
 }
-.loctionDetails h3{font-size: 24px; margin: 5px 0;font-weight: bold;}
+
+.loctionDetails h3 {
+  font-size: 24px;
+  margin: 5px 0;
+  font-weight: bold;
+}
 
 .bookNowBtn {
   padding: 10px 20px;
@@ -186,7 +197,8 @@ select:focus-visible {
   cursor: pointer;
 }
 
-.btnContainer ,.footer {
+.btnContainer,
+.footer {
   display: flex;
   justify-content: space-between;
 }
@@ -200,55 +212,70 @@ select:focus-visible {
   font-weight: bold;
   color: yellow;
 }
-.loctionDetails p{margin: 0 ;font-weight: 500;}
 
-.gymBanner, .gymBanner img{
+.loctionDetails p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.gymBanner,
+.gymBanner img {
   width: 100%;
   height: 400px;
 }
 
-.footer{
+.footer {
   margin: 40px;
   color: white;
 }
-.socialmediaIcons{
+
+.socialmediaIcons {
   margin-right: 20px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background-color: white;
-  transition:  1s;
+  transition: 1s;
 }
-.socialmediaIcons:hover{
+
+.socialmediaIcons:hover {
   background-color: rgb(84, 84, 219);
 }
 
-.socialmediaIconContainer{
+.socialmediaIconContainer {
   display: flex;
   margin: 20px 0;
 }
-.quicklinks , .explorelinks{
-  margin: 10px 0 ;
+
+.quicklinks,
+.explorelinks {
+  margin: 10px 0;
 }
-.quicklinks:hover , .explorelinks:hover ,.contactMenu:hover{
+
+.quicklinks:hover,
+.explorelinks:hover,
+.contactMenu:hover {
   background-color: #171717;
   cursor: pointer;
 }
-.textLink  {
+
+.textLink {
   text-decoration: none;
   color: white;
 }
-.contactMenu{
+
+.contactMenu {
   display: flex;
-  margin: 10px 0 ;
+  margin: 10px 0;
 
 }
-.contactsubmenu{
+
+.contactsubmenu {
   width: 260px;
   padding: 0 10px;
 }
 
-.searchInput button{
+.searchInput button {
   width: 55px;
   height: auto;
   font-size: 16px;
@@ -257,5 +284,21 @@ select:focus-visible {
   border: 1px solid;
   border-radius: 8px;
   box-shadow: 1px 1px 3px;
+  cursor: pointer;
 
+}
+
+.reset {
+  float: right;
+  padding: 5px 15px;
+  border-radius: 8px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.reset:hover,
+.searchInput button:hover {
+  opacity: .8;
 }

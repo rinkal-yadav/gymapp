@@ -51,11 +51,12 @@ const Gyms = () => {
             <div className='itemContainer'>
 
                 <div className='inputFilter'>
+                   
+                    <form >
                     {
-                        gymSearchByName !== '' || gymSearch !== '' ? <button onClick={resetAll}>Reset</button> : null
+                        gymSearchByName.name.length>0 || gymSearch.loc.length>0|| gymSearch.city.length>0|| gymSearch.minRange.length>0|| gymSearch.maxRange.length>0 ? <button className='reset' onClick={resetAll}>Reset</button> : null
 
                     }
-                    <form  >
                         <h2>Filter </h2>
                         <h3>Location</h3>
                         <div className='smallSearchInput'>
