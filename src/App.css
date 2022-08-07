@@ -54,7 +54,7 @@ h5 {
   opacity: 1 !important;
 }
 
-.css-yz9k0d-MuiInputBase-input {
+.css-yz9k0d-MuiInputBase-input ,input {
   color: white !important;
 }
 
@@ -305,4 +305,5 @@ select:focus-visible {
 
 .css-oasusv{
   width: 90% !important;
+  
 }
